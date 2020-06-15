@@ -1,4 +1,4 @@
-#togglechecked + menu {
+#toggle:checked + menu {
   background-color: #eee;
   display: block;
   overflow: hidden;
@@ -139,12 +139,6 @@
   }
   .Header__principal__toggle label {
     display: none;
-  }
-}
-@media only screen and (min-width: 1201px) {
-  .Header {
-    width: 1200px;
-    margin: 0 auto 0 auto;
   }
 }
 * {
