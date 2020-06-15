@@ -1,8 +1,7 @@
-# Kod3rs Store Frontend
+# Luis Antonio Rodríguez García portfolio
 
-This project is a frontend developed in React using nodejs as a server side render for kod3rsStore.
+This project is a frontend developed in React using nodejs as a server side render for a portfolio.
 
-This server implement security with passport js using Json Web Tokens.
 
 ## Getting Started
 
@@ -14,7 +13,7 @@ git init
 Clone the repository
 
 ```
-git clone https://github.com/kod3rsStore/Frontend.git
+git clone https://github.com/luisrdz5/portafolio.git
 ```
 
 ### Prerequisites
@@ -58,13 +57,12 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/luisrdz5/portafolio/tags). 
 
 ## Authors
 * **Luis Antonio Rodriguez Garcia**  [Luisrdz5](https://github.com/luisrdz5)
-* **Wilson Antury**  [Wilantury](https://github.com/wilantury)
 
-See also the list of [contributors](https://github.com/kod3rsStore/Frontend/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/luisrdz5/portafolio/contributors) who participated in this project.
 
 ## License
 
