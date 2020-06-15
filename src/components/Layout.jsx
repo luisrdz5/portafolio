@@ -6,7 +6,7 @@ import '../styles/components/Layout.styl';
 const Layout = ({ children }) => (
   <div className="Main">
     <Header />
-    {children}
+      {children}
     <Footer />
   </div>
 );
