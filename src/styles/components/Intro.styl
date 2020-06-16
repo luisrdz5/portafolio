@@ -1,0 +1,23 @@
+
+
+.Intro
+    margin 100px 0 0 0
+    display grid
+    grid-template-columns 100%
+    grid-gap 5px
+    font-size $font-size-big
+    input
+        background-color $button-color
+        border none
+        color white
+        padding 15px 32px
+        text-align center
+        text-decoration none
+        display inline-block
+    &__thumbnail
+        margin 80px 0 0 0
+
+@media only screen and (min-width 800px)
+    .Intro
+        grid-template-columns 50% 50%
+

@@ -8,13 +8,16 @@
     z-index 3
 .Header
     width 100%
-    position fixed
-    background $background-color
+    position static
     z-index 1
     margin 0px
     top 0
+    a
+        text-decoration none
+        color $text-color
+        text-size-adjust 100%
     &__principal
-        margin 0 40px 0 0
+        margin 0 0 0 0
         padding 15px 0 0 0 
         display grid
         grid-template-columns 30% 70% 
@@ -76,7 +79,7 @@
         box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
 @media only screen and (min-width 800px) 
     .Header
-        font-size $font-size
+        font-size $font-size-medium
         &__principal
             padding 15px 0 0 0 
             display grid
@@ -107,7 +110,7 @@
             border 0
             padding 0
             margin 0 0 0 15px
-        &__menu lihover
+        &__menu li hover
             background $background-search
             border-bottom 0
         &__menu a
