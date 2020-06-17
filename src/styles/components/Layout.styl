@@ -4,7 +4,6 @@ html, body, html * {
   font-family: 'Roboto', sans-serif;
 }
 
-
 *
   text-decoration none
   list-style none
@@ -28,14 +27,16 @@ body
     z-index 1
 #toggle 
     display none
-
+@media only screen and (min-width 440px) and (min-width 1201px) 
+  .Main  
+    margin-left: 50px;
+    margin-right: 50px;
 @media only screen and (min-width 600px) and (max-width 900px) 
   body
     font-size $font-size-medium
-@media only screen and (min-width 900px) and (max-width 1200px) 
-  body
-    font-size $font-size-big
 @media only screen and (min-width 1201px) 
+  body
+    font-size $font-size-big  
   Main
     width 1200px
     display: block;

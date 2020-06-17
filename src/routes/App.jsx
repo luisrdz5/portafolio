@@ -5,14 +5,14 @@ import Main from '../components/Main';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-    <BrowserRouter>
-        <Layout>
-            <Switch>
-                <Route exact path="/" component={Main} />
-                <Route component={NotFound} />
-            </Switch>
-        </Layout>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </BrowserRouter>
 );
 
 export default App;

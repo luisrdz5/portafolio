@@ -1,0 +1,63 @@
+.Projects
+    display block
+    &-container 
+        display grid
+        grid-template-columns repeat(1, 1fr)
+        grid-gap 10px
+    &-item-github-information
+        span
+            margin-left 0.5rem
+        img
+            margin-left 0.5rem
+.card
+    height 500px
+    background-color $background-color
+    box-shadow: rgba(0, 0, 0, 0.31) 0px 2px 6px 3px;
+    &-image
+        padding 20px 20px 5px 20px
+        height 250px
+        img
+            width 100%
+            height 250px
+            object-fit: cover;
+            object-position: 100% 0
+            box-shadow: rgba(0, 0, 0, 0.11) 0px 2px 6px 3px;
+    &-content
+        padding 0 20px 0 20px
+        height 150px
+        button
+            background-color $button-color
+            border none
+            color white
+            padding 10px
+            margin 5px
+            text-align center
+            text-decoration none
+            display inline-block
+    &-reveal
+        display none
+@media only screen and (min-width 600px) and (max-width 900px) 
+    .Projects
+        &-container 
+            display grid
+            grid-template-columns repeat(2, 1fr)
+            grid-gap 10px
+
+@media only screen and (min-width 901px) and (max-width 1200px) 
+    .Projects
+        &-container 
+            display grid
+            grid-template-columns repeat(3, 1fr)
+            grid-gap 10px
+@media only screen and (min-width 1201px) 
+    .Projects
+        width 1200px
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        &-container 
+            display grid
+            grid-template-columns repeat(3, 1fr)
+            grid-gap 10px
+    .card
+        font-size $font-size-medium

@@ -30,12 +30,12 @@ const Header = (props) => {
               <Link to="./">Blog</Link>
             </li>
             <li>
-              <div className="Header__menu--dark">
+              <div className="Header__menu--darkClass">
                 Dark mode 
                 {' '}
-                <input name="dark" type="checkbox" className="Header__menu--darkMode" /> 
+                <input name="darkCheck" type="checkbox" className="Header__menu--darkMode" /> 
               </div>
-            </li>                
+            </li>
           </menu>
         </div>
         <div className="Header__principal--title">
