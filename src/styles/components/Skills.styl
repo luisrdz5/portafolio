@@ -1,0 +1,33 @@
+@import './Variables.styl'
+
+.Skills
+    &-container
+        display grid
+        grid-template-columns repeat(1, 1fr)
+        grid-gap 10px
+    &-details
+        display flex
+        flex-direction column
+        align-self center
+        input
+            background-color $button-color
+            border none
+            color white
+            padding 15px 32px
+            text-align center
+            text-decoration none
+            display inline-block
+@media only screen and (min-width 600px) 
+    .Skills
+        &-container
+            display grid
+            grid-template-columns repeat(2, 1fr)
+            grid-gap 10px
+@media only screen and (min-width 1201px) 
+    .Skills
+        width 1200px
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+ 

@@ -15,19 +15,21 @@ body
   display flex
   flex-direction column
 .Main  
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 .Wrapper
     margin 0 0 0 0
-    padding-bottom: 4rem;
-    background-image: url('../../assets/illustrations/overlay.svg');
-    background-size: contain;
-    background-position: right top;
-    background-repeat: no-repeat;
+    padding-bottom 4rem
+    background-image url('../../assets/illustrations/overlay.svg')
+    background-size contain
+    background-position right top
+    background-repeat no-repeat
     z-index 1
 #toggle 
     display none
-@media only screen and (min-width 440px) and (min-width 1201px) 
+@media only screen and (min-width 440px) and (max-width 1201px) 
+  .Wrapper
+    background-size: 70%;
   .Main  
     margin-left: 50px;
     margin-right: 50px;
@@ -43,3 +45,5 @@ body
     margin-left: auto;
     margin-right: auto;
     font-size $font-size-big
+  .Wrapper
+      background-size: 50%;
