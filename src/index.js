@@ -8,6 +8,49 @@ import reducer from './reducers';
 
 
 const initialState = {
+  skills: [
+    {
+      "id": "1",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/node.png",
+      "description": "Node JS",
+    },{
+      "id": "2",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/javascript.png",
+      "description": "Javascript",
+    },{
+      "id": "3",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/jwt.png",
+      "description": "JWT",
+    },{
+      "id": "4",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/database.png",
+      "description": "Databases",
+    },{
+      "id": "5",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/cyber-security.png",
+      "description": "Cyber security",
+    },{
+      "id": "6",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/cicd.png",
+      "description": "CI / CD",
+    },{
+      "id": "7",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/docker.png",
+      "description": "Docker",
+    },{
+      "id": "8",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/linux.png",
+      "description": "Linux",
+    },{
+      "id": "9",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/firewall.png",
+      "description": "Firewalls",
+    },{
+      "id": "10",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/test.png",
+      "description": "Testing",
+    }
+  ],
   projects: [
     {
       "id": "1",
