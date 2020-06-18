@@ -1,10 +1,19 @@
 .Footer
     width 100%
-    display block
+    display grid
+    grid-template-columns 70% 30%
+    grid-gap 5px
+    &-social
+        display flex
+        align-items flex-end
+        a
+            align-content end
+        img
+            width 40px
+            padding 0 20px 0 20px
 
 @media only screen and (min-width 1201px) 
     .Footer
         width 1200px
-        display: block;
         margin-left: auto;
         margin-right: auto;
