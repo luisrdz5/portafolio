@@ -93,19 +93,19 @@ const initialState = {
       "id": 1,
       "name": "Github",
       "link": "https://github.com/luisrdz5",
-      "icon": "../icons/github.svg"
+      "icon": "./icons/github.svg"
     },
     {
       "id": 2,
       "name": "Twitter",
       "link": "https://twitter.com/luis_rdz5",
-      "icon": "../icons/twitter.svg"
+      "icon": "./icons/twitter.svg"
     },
     {
       "id": 3,
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/luisrdz5",
-      "icon": "../icons/linkedin.svg"
+      "icon": "./icons/linkedin.svg"
     }
   ]
   
