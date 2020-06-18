@@ -93,19 +93,19 @@ const initialState = {
       "id": 1,
       "name": "Github",
       "link": "https://github.com/luisrdz5",
-      "icon": "./icons/github.svg"
+      "icon": "https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/github.svg"
     },
     {
       "id": 2,
       "name": "Twitter",
       "link": "https://twitter.com/luis_rdz5",
-      "icon": "./icons/twitter.svg"
+      "icon": "https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/twitter.svg"
     },
     {
       "id": 3,
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/luisrdz5",
-      "icon": "./icons/linkedin.svg"
+      "icon": "https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/linkedin.svg"
     }
   ]
   
