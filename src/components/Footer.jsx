@@ -24,9 +24,9 @@ const Footer = (props) =>  {
       </div>
       <div className='Footer-social'>
         {social.map(({ id, name, link, icon }) => (
-            <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
-              <img src={icon} alt={name} />
-            </a>
+          <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
+            <img src={icon} alt={name} />
+          </a>
           ))}
       </div>
     </div>
