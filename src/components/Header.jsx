@@ -18,16 +18,16 @@ const Header = (props) => {
               </div>
             </div>            
             <li>
-              <Link to="./">About</Link>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <Link to="./">Projects</Link>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <Link to="./">Contact</Link>
+              <a href="#contact">Contact</a>
             </li>
             <li>
-              <Link to="./">Blog</Link>
+              <a href="https://blog.luisrodriguezgarcia.com">Blog</a>
             </li>
             <li>
               <div className="Header__menu--darkClass">

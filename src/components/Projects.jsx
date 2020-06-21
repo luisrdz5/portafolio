@@ -8,7 +8,7 @@ import forkIcon from '../assets/icons/fork.svg';
 const Projects = (props) => {
     const { projects } = props;
     return(
-      <div className='Projects'>
+      <div className='Projects' id='projects'>
         <h1>Projects</h1>
         <div className='Projects-container'>
           {projects.map(project => (

@@ -10,7 +10,7 @@ const Intro = () => (
       <div className='Intro__details'>
         <h1>Hi There!</h1>
         <h4>I’m Luis Antonio Rodríguez García <br /> I’m a Full Stack developer!</h4>
-        <input type='button' href="#contact" value='Contact me' />
+        <a href='#contact'> Contact me </a>
       </div>
       <div className='Intro__thumbnail'>
         <img src={dev} alt="I’m Luis Antonio Rodríguez García and I’m a Full Stack developer!" />

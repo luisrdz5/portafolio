@@ -3,20 +3,63 @@ import axios from 'axios';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
+import Mailchimp from 'react-mailchimp-form';
 
 const ContactForm = () => {
-  console.log(`${JSON.stringify(process.env)}`);
+    console.log(`${JSON.stringify(process.env)}`);
     return (
-      <div className='ContactForm'>
-        <Formik
-          initialValues={{
+      <div className='ContactForm' id='contact'>
+        <Mailchimp
+          action='https://luisrodriguezgarcia.us10.list-manage.com/subscribe/post?u=7b7c7fc4bd3c35cc9e802c8f8&amp;id=69ace37e99'
+          fields={[
+          {
+            name: 'NAME',
+            placeholder: 'Name',
+            type: 'text',
+            required: true
+          },{
+            name: 'EMAIL',
+            placeholder: 'Email',
+            type: 'email',
+            required: true
+          },{
+            name: 'MESSAGE',
+            placeholder: 'Message',
+            type: 'text',
+            required: true
+          }
+        ]}
+          // Change predetermined language
+          messages={
+          {
+            sending: "Sending...",
+            success: "Thank you for send a message!",
+            error: "An unexpected internal error has occurred.",
+            empty: "You must write an e-mail.",
+            duplicate: "Too many subscribe attempts for this email address",
+            button: "Submit"
+          }
+        }
+        />
+      </div>
+
+
+
+
+
+
+
+/*
+        initialValues=
+        {{
                 name: '',
                 email: '',
                 message: '',
                 recaptcha: '',
                 success: false,
                 }}
-          validationSchema={Yup.object().shape({
+        validationSchema=
+        {Yup.object().shape({
                 name: Yup.string().required('Full name field is required'),
                 email: Yup.string()
                     .email('Invalid email')
@@ -24,45 +67,38 @@ const ContactForm = () => {
                 message: Yup.string().required('Message field is required'),
                 recaptcha: Yup.string().required('Robots are not welcome yet!'),
                 })}
-          onSubmit={(values, { setSubmitting }) => {
-                  setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    setSubmitting(false);
-                  }, 400);
-                }}
-        >
-          {({ values, touched, errors, setFieldValue, isSubmitting }) => (
-            <Form>
-              <input
-                type="text"
-                name="name"
-                component="input"
-                aria-label="name"
-                placeholder="Full name*"
-                error={touched.name && errors.name}
-              />
-              <ErrorMessage component={Error} name="name" />
-              <input
-                id="email"
-                aria-label="email"
-                component="input"
-                type="email"
-                name="email"
-                placeholder="Email*"
-                error={touched.email && errors.email}
-              />
-              <ErrorMessage component={Error} name="email" />
-              <textarea
-                className='ContactForm-message'
-                aria-label="message"
-                id="message"
-                rows="8"
-                name="message"
-                placeholder="Message*"
-                error={touched.message && errors.message}
-              />
-              <ErrorMessage component={Error} name="message" />
-              {values.name && values.email && values.message && (
+        {({ values, touched, errors, setFieldValue, isSubmitting }) => (
+          <Form>
+            <input
+              type="text"
+              name="name"
+              component="input"
+              aria-label="name"
+              placeholder="Full name*"
+              error={touched.name && errors.name}
+            />
+            <ErrorMessage component={Error} name="name" />
+            <input
+              id="email"
+              aria-label="email"
+              component="input"
+              type="email"
+              name="email"
+              placeholder="Email*"
+              error={touched.email && errors.email}
+            />
+            <ErrorMessage component={Error} name="email" />
+            <textarea
+              className='ContactForm-message'
+              aria-label="message"
+              id="message"
+              rows="8"
+              name="message"
+              placeholder="Message*"
+              error={touched.message && errors.message}
+            />
+            <ErrorMessage component={Error} name="message" />
+            {values.name && values.email && values.message && (
               <FastField
                 component={Recaptcha}
                 sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
@@ -70,14 +106,15 @@ const ContactForm = () => {
                 onChange={value => setFieldValue('recaptcha', value)}
               />
                 )}
-              {values.success && (
-                <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
+            {values.success && (
+            <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
                 )}
-              <input type="submit" disabled={isSubmitting} name='Submit' className='Submit' />
-            </Form>
+            <input type="submit" disabled={isSubmitting} name='Submit' className='Submit' />
+          </Form>
                 )}
-        </Formik>
-      </div>
+
+                */
+
     )
 }
 

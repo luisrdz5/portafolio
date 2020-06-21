@@ -8,7 +8,7 @@ export const Skills = (props) => {
   const { skills } = props;
 
     return (
-      <div className='Skills'>
+      <div className='Skills' id='skills'>
         <div className='Skills-container'>
           <div className='Skills-image'>
             <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
@@ -27,7 +27,7 @@ export const Skills = (props) => {
                 </div>
               ))}
             </div>
-            <button type='button' href="#contact">Contact me</button>
+            <a href='#contact'> Contact me </a>
           </div>
         </div>
       </div>
