@@ -4,9 +4,8 @@ import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 
-
 const ContactForm = () => {
-
+  console.log(`${JSON.stringify(process.env)}`);
     return (
       <div className='ContactForm'>
         <Formik
@@ -25,11 +24,16 @@ const ContactForm = () => {
                 message: Yup.string().required('Message field is required'),
                 recaptcha: Yup.string().required('Robots are not welcome yet!'),
                 })}
+          onSubmit={(values, { setSubmitting }) => {
+                  setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                    setSubmitting(false);
+                  }, 400);
+                }}
         >
           {({ values, touched, errors, setFieldValue, isSubmitting }) => (
             <Form>
               <input
-                as={FastField}
                 type="text"
                 name="name"
                 component="input"
@@ -42,7 +46,6 @@ const ContactForm = () => {
                 id="email"
                 aria-label="email"
                 component="input"
-                as={FastField}
                 type="email"
                 name="email"
                 placeholder="Email*"
@@ -50,7 +53,6 @@ const ContactForm = () => {
               />
               <ErrorMessage component={Error} name="email" />
               <textarea
-                as={FastField}
                 className='ContactForm-message'
                 aria-label="message"
                 id="message"
@@ -70,8 +72,8 @@ const ContactForm = () => {
                 )}
               {values.success && (
                 <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
-                    )}
-              <input secondary type="submit" disabled={isSubmitting} name='Submit' className='Submit' />
+                )}
+              <input type="submit" disabled={isSubmitting} name='Submit' className='Submit' />
             </Form>
                 )}
         </Formik>

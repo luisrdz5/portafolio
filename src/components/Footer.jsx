@@ -8,7 +8,7 @@ const Footer = (props) =>  {
   return (
     <div className='Footer'>
       <div className='Footer-info'>
-        <h2>Luis Antonio Rodriguez García</h2>
+        <h2>Luis Antonio Rodríguez García</h2>
         <span>
           © All rights are reserved | 
           {' '}
@@ -18,7 +18,7 @@ const Footer = (props) =>  {
           by
           {' '}
           <a href="https://luisrodriguezgarcia.com" rel="noopener noreferrer" target="_blank">
-            Luis Antonio rodríguez García
+            Luis Antonio Rodríguez García
           </a>
         </span>
       </div>
