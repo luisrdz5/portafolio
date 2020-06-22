@@ -1,39 +1,57 @@
+/* eslint-disable no-shadow */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../styles/components/Header.styl';
+import closeImage from '../assets/icons/close.svg';
+import { toggleChange, toggleTheme } from '../actions/index';
 
 const Header = (props) => {
+  const { toggleChange, toggleTheme, darkMode } = props;
   return (
     <div className="Header">
-      <div className="Header__principal">  
-        <div className="Header__principal__toggle">            
+      <div className="Header__principal">
+        <div className="Header__principal__toggle">
           <label htmlFor="toggle"> &#9776;</label>
-          <input type="checkbox" id="toggle" />
+          <input type="checkbox" id="toggle"  />
           <menu className="Header__menu" id="Header__menu">
+            <div className='Header__menu--close'>
+              <img src={closeImage} alt="close" onClick={toggleChange} />
+            </div>
             <div className="Header__menu--title">
               <div className="Header__menu--title--text">
                 Menu
               </div>
-            </div>            
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <a href="https://blog.luisrodriguezgarcia.com">Blog</a>
-            </li>
+            </div>
+            <a href="#projects" onClick={toggleChange}>
+              <li>
+                Projects
+              </li>
+            </a>
+            <a href="#skills" onClick={toggleChange}>
+              <li>
+                Skills
+              </li>
+            </a>
+            <a href="#contact" onClick={toggleChange}>
+              <li>
+                Contact
+              </li>
+            </a>
+            <a href="https://blog.luisrodriguezgarcia.com" onClick={toggleChange}>
+              <li>
+                Blog
+              </li>
+            </a>
             <li>
               <div className="Header__menu--darkClass">
                 Dark mode 
                 {' '}
-                <input name="darkCheck" type="checkbox" className="Header__menu--darkMode" /> 
+                <input name="darkCheck" type="checkbox" className="Header__menu--darkMode" onClick={toggleTheme} /> 
               </div>
             </li>
           </menu>
@@ -45,4 +63,15 @@ const Header = (props) => {
     </div>
 )};
 
-export default connect(null, null)(Header);
+const mapStateToProps = (state) => {
+  return {
+    darkMode: state.darkMode,
+  };
+};
+
+const mapDispatchToProps = {
+  toggleChange,
+  toggleTheme
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

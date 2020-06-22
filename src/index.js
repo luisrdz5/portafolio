@@ -5,9 +5,8 @@ import { createStore, compose } from 'redux';
 import App from './routes/App';
 import reducer from './reducers';
 
-
-
 const initialState = {
+  darkMode: false,
   skills: [
     {
       "id": "1",

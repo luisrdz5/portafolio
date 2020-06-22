@@ -57,11 +57,6 @@ module.exports = {
           'css-loader',
           {
             loader: 'stylus-loader',
-            options: {
-              import: [
-                  path.resolve(__dirname, './src/styles/components/Variables.styl') 
-              ]
-            }
           }
           
         ],

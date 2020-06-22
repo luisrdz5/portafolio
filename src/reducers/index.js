@@ -1,28 +1,21 @@
 const reducer = (state, action) => {
-  let index=0;
+  let darkStatus;
   switch (action.type) {
-    case 'ADD_TO_CART':
-        if(state.cart.length>0){
-          index=state.cart.slice(state.cart.length-1)[0].key+1;
-        }      
+    case 'TOGGLE_CHANGE':
+      document.getElementById('toggle').checked = false;
       return {
-        ...state,   
-        cart: [...state.cart, Object.assign({}, action.payload,{key: index})]
-      }
-      case 'DELETE_FROM_CART':
-        return {
-          ...state,
-          cart: state.cart.filter((items) => items.key !== action.payload)
+        ...state,
+        isChecked: false,
+      };
+      case 'TOGGLE_THEME':
+        if(state.darkMode){
+          darkStatus = false
+        }else{
+          darkStatus = true
         }
-      case 'LOGIN_REQUEST':
         return {
           ...state,
-          user: action.payload,
-        };
-      case 'LOGOUT_REQUEST':
-        return {
-          ...state,
-          user: action.payload,
+          darkMode: darkStatus,
         };
     default:
       return state;
