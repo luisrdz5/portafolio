@@ -14,6 +14,36 @@ body {
   color: ${props =>
     props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
 }
+#toggle:checked + menu {
+  text-decoration-color: none;
+  background-color: ${props =>
+    props.theme.mode === 'dark' ? '#000000' : '#FFFFFF'};
+  color: ${props =>
+    props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
+}
+.Header__menu a:link, a:visited, a:active {
+  text-decoration:none;
+  color: ${props =>
+    props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
+}
+.Header__principal--title a:link, a:visited, a:active {
+  color: ${props =>
+    props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
+}
+@media only screen and (max-width: 800px) {
+  .Header__menu li{
+    border: 1px solid ${props =>
+      props.theme.mode === 'dark' ? '#FFFFFF' : '#000000'};
+      color: ${props =>
+        props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
+  } 
+
+  .Header__principal--title a:link, a:visited, a:active  {
+    color: ${props =>
+      props.theme.mode === 'dark' ? 'black': 'black'};
+  }
+}
+
 `;
 
 
