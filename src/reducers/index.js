@@ -8,10 +8,10 @@ const reducer = (state, action) => {
         isChecked: false,
       };
       case 'TOGGLE_THEME':
-        if(state.darkMode){
-          darkStatus = false
+        if(state.darkMode === 'light'){
+          darkStatus = 'dark'
         }else{
-          darkStatus = true
+          darkStatus = 'light'
         }
         return {
           ...state,

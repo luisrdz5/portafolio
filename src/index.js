@@ -5,8 +5,10 @@ import { createStore, compose } from 'redux';
 import App from './routes/App';
 import reducer from './reducers';
 
+
+
 const initialState = {
-  darkMode: false,
+  darkMode: 'light',
   skills: [
     {
       "id": "1",
@@ -109,6 +111,7 @@ const initialState = {
   ]
   
 };
+
 
 const composeEnhacers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, initialState, composeEnhacers());
