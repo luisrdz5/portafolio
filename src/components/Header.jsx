@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../styles/components/Header.styl';
 import closeImage from '../assets/icons/close.svg';
+import closeImageDark from '../assets/icons/closeDark.svg';
 import { toggleChange, toggleTheme } from '../actions/index';
 
 const Header = (props) => {
@@ -20,7 +21,7 @@ const Header = (props) => {
           <input type="checkbox" id="toggle"  />
           <menu className="Header__menu" id="Header__menu">
             <div className='Header__menu--close'>
-              <img src={closeImage} alt="close" onClick={toggleChange} />
+              <img src={darkMode === 'dark' ? closeImageDark : closeImage} alt="close" onClick={toggleChange}  className='Header__menu--close--svg'/>
             </div>
             <div className="Header__menu--title">
               <div className="Header__menu--title--text">

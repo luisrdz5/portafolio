@@ -30,6 +30,10 @@ body {
   color: ${props =>
     props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
 }
+.Header__menu--close--svg {
+  fill: red;
+}
+
 @media only screen and (max-width: 800px) {
   .Header__menu li{
     border: 1px solid ${props =>
