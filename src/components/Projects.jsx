@@ -42,17 +42,17 @@ const Projects = (props) => {
                 <p>{project.description}</p>
                 <p>
                   {project.blogLink &&(
-                    <a target='_blank' href={project.blogLink}>
+                    <a target='_blank' rel='noopener noreferrer' href={project.blogLink}>
                       <button type='button'>Blog</button>
                     </a>
                   )}
                   {project.github && (
-                    <a target='_blank' href={project.github}>
+                    <a target='_blank' rel='noopener noreferrer' href={project.github}>
                       <button type='button'>github</button>
                     </a>
                   )}
                   {project.urlDemo && (
-                    <a target='_blank' href={project.urlDemo}>
+                    <a target='_blank' rel='noopener noreferrer' href={project.urlDemo}>
                       <button type='button'>Demo</button>
                     </a>
                   )}

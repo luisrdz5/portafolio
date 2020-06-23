@@ -28,22 +28,22 @@ const Header = (props) => {
                 Menu
               </div>
             </div>
-            <a href="#projects" onClick={toggleChange}>
+            <a href="#projects" onClick={toggleChange} rel="noopener noreferrer">
               <li>
                 Projects
               </li>
             </a>
-            <a href="#skills" onClick={toggleChange}>
+            <a href="#skills" onClick={toggleChange} rel="noopener noreferrer">
               <li>
                 Skills
               </li>
             </a>
-            <a href="#contact" onClick={toggleChange}>
+            <a href="#contact" onClick={toggleChange} rel="noopener noreferrer">
               <li>
                 Contact
               </li>
             </a>
-            <a href="https://blog.luisrodriguezgarcia.com" onClick={toggleChange}>
+            <a href="https://blog.luisrodriguezgarcia.com" onClick={toggleChange} rel="noopener noreferrer">
               <li>
                 Blog
               </li>
