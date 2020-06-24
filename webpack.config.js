@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+
 
 module.exports = {
   entry:  path.resolve(__dirname, 'src/index.js'),
@@ -71,6 +74,28 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
+    new WebpackPwaManifest({
+      name: 'Luis Antonio Rodríguez García Portafolio',
+      shortname: 'Portafolio',
+      description: 'This is Luis Antonio Rodríguez García Portfolio',
+      background_color: '#fff',
+      theme_color: '#fff',
+      icons: [
+        {
+          src: path.resolve('src/assets/thumbnail/thumbnail.png'),
+          sizes: [96, 128, 192, 256, 384, 512]
+        }
+      ]
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      runtimeCaching: [{
+        urlPattern: new RegExp('https://luisrodriguezgarcia.com'),
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'images'
+        }
+      }]
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'public'),

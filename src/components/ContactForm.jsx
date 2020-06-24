@@ -27,7 +27,7 @@ const ContactForm = () => {
           // Change predetermined language
           messages={
           {
-            sending: "Sending...",
+            sending: "Sending... ",
             success: "Thank you for send a message!",
             error: "An unexpected internal error has occurred.",
             empty: "You must write an e-mail.",
