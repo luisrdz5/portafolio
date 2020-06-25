@@ -55,7 +55,7 @@ const initialState = {
   projects: [
     {
       "id": "1",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kod3rsstore.png",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
       "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "github": "https://github.com/kod3rsStore",
@@ -65,7 +65,7 @@ const initialState = {
       "description": "Its an ecommerce site "
     },{
       "id": "2",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kod3rsstore.png",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
       "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "blogLink": "https://blog.luisrodriguezgarcia.com",
@@ -73,7 +73,7 @@ const initialState = {
       "description": "Its an ecommerce site "
     },{
       "id": "3",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kod3rsstore.png",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
       "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "github": "https://github.com/kod3rsStore",
@@ -81,7 +81,7 @@ const initialState = {
       "description": "Its an ecommerce site "
     },{
       "id": "4",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kod3rsstore.png",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
       "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "github": "https://github.com/kod3rsStore",
