@@ -24,7 +24,7 @@ body {
 .Header__menu a:link, a:visited, a:active {
   text-decoration:none;
   color: ${props =>
-    props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
+    props.theme.mode === 'dark' ? '#000000': '#000000'};
 }
 .Header__principal--title a:link, a:visited, a:active {
   color: ${props =>
