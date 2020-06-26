@@ -9,7 +9,23 @@ const Intro = () => (
     <div className='Intro'>
       <div className='Intro__details'>
         <h1>Hi There!</h1>
-        <h4>I’m Luis Antonio Rodríguez García <br /> I’m a Full Stack developer!</h4>
+        <h4>
+          I’m Luis Antonio Rodríguez García
+          <br />
+          <br />
+          {' '}
+        <span>
+          I'm an expert Full Stack developer in Javascript, PHP and Python.
+          <br />
+          <br />
+          I have broad knowledge in Linux based security systems with over 20 years of experience.
+          <br />
+          <br />
+          Outgoing, determined and goal oriented, excellent for teamwork and collaborative work.
+          <br />
+          <br />
+        </span>
+        </h4>
         <a href='#contact'> Contact me </a>
       </div>
       <div className='Intro__thumbnail'>
