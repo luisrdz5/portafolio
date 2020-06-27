@@ -65,12 +65,13 @@ const initialState = {
       "description": "Its an ecommerce site "
     },{
       "id": "2",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
-      "urlDemo": "https://kod3rsstore.com",
-      "title": "kod3rsstore",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/destcar.gif",
+      "urlDemo": "https://destcar.com",
+      "title": "Destcar",
       "blogLink": "https://blog.luisrodriguezgarcia.com",
-      "stars": "25",
-      "description": "Its an ecommerce site "
+      "stars": "3",
+      "forks": "2",
+      "description": "Its an Uber clone "
     },{
       "id": "3",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
