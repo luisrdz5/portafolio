@@ -65,6 +65,15 @@ const initialState = {
       "description": "Its an ecommerce site "
     },{
       "id": "2",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/home_optimized.png",
+      "urlDemo": "https://myvideo.luisrodriguezgarcia.com",
+      "title": "My Video (Platzi Video)",
+      "github": "https://github.com/luisrdz5/mymediaplayer",
+      "forks": "2",
+      "stars": "3",
+      "description": "Its a Simple Netflix Clone developen in javascript and deployed in Heroku"
+    },{
+      "id": "3",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/destcar.gif",
       "urlDemo": "https://destcar.com",
       "title": "Destcar",
@@ -73,23 +82,7 @@ const initialState = {
       "stars": "3",
       "forks": "2",
       "description": "Its an Uber clone "
-    },{
-      "id": "3",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
-      "urlDemo": "https://kod3rsstore.com",
-      "title": "kod3rsstore",
-      "github": "https://github.com/kod3rsStore",
-      "forks": "20",
-      "description": "Its an ecommerce site "
-    },{
-      "id": "4",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
-      "urlDemo": "https://kod3rsstore.com",
-      "title": "kod3rsstore",
-      "github": "https://github.com/kod3rsStore",
-      "blogLink": "https://blog.luisrodriguezgarcia.com",
-      "description": "Its an ecommerce site "
-    },
+    }
   ],
   social: [
     {
