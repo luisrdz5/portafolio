@@ -5,6 +5,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 
+
 module.exports = {
   entry:  path.resolve(__dirname, 'src/index.js'),
   output: {
@@ -86,7 +87,7 @@ module.exports = {
           sizes: [96, 128, 192, 256, 384, 512]
         }
       ]
-    }),
+    }) ,
     new WorkboxWebpackPlugin.GenerateSW({
       runtimeCaching: [{
         urlPattern: new RegExp('https://luisrodriguezgarcia.com'),

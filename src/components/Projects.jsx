@@ -17,7 +17,6 @@ const Projects = (props) => {
                 <img src={project.image} alt={project.title} />
               </div>
               <div className='card-content'>
-
                 <h2>
                   {project.title}
                 </h2>

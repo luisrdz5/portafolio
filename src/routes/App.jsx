@@ -14,6 +14,7 @@ body {
   color: ${props =>
     props.theme.mode === 'dark' ? '#FFFFFF': '#000000'};
 }
+
 #toggle:checked + menu {
   text-decoration-color: none;
   background-color: ${props =>

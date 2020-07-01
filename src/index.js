@@ -62,26 +62,27 @@ const initialState = {
       "blogLink": "https://blog.luisrodriguezgarcia.com",
       "stars": "25",
       "forks": "20",
-      "description": "Its an ecommerce site "
+      "description": "Its an ecommerce site dveloped in javascript and deployed in docker swarm using gitlab"
     },{
       "id": "2",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/home_optimized.png",
       "urlDemo": "https://myvideo.luisrodriguezgarcia.com",
       "title": "My Video (Platzi Video)",
       "github": "https://github.com/luisrdz5/mymediaplayer",
+      "blogLink": "https://blog.luisrodriguezgarcia.com",
       "forks": "2",
       "stars": "3",
-      "description": "Its a Simple Netflix Clone developen in javascript and deployed in Heroku"
+      "description": "Its a Simple Netflix Clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
     },{
       "id": "3",
-      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/destcar.gif",
+      "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/destcar3.png",
       "urlDemo": "https://destcar.com",
       "title": "Destcar",
       "github": "https://github.com/luisrdz5/destcar",
       "blogLink": "https://blog.luisrodriguezgarcia.com",
       "stars": "3",
       "forks": "2",
-      "description": "Its an Uber clone "
+      "description": "Its a Simple Uber clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
     }
   ],
   social: [
