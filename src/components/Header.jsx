@@ -43,7 +43,7 @@ const Header = (props) => {
                 Contact
               </li>
             </a>
-            <a href="https://blog.luisrodriguezgarcia.com" onClick={toggleChange} rel="noopener noreferrer">
+            <a href="https://luisrodriguezgarcia.com" onClick={toggleChange} rel="noopener noreferrer">
               <li>
                 Blog
               </li>

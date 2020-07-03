@@ -59,7 +59,7 @@ const initialState = {
       "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "github": "https://github.com/kod3rsStore",
-      "blogLink": "https://blog.luisrodriguezgarcia.com",
+      "blogLink": "https://luisrodriguezgarcia.com",
       "stars": "25",
       "forks": "20",
       "description": "It's an e-commerce site developed in javascript and deployed in docker swarm using gitlab"
@@ -69,7 +69,7 @@ const initialState = {
       "urlDemo": "https://myvideo.luisrodriguezgarcia.com",
       "title": "My Video (Platzi Video)",
       "github": "https://github.com/luisrdz5/mymediaplayer",
-      "blogLink": "https://blog.luisrodriguezgarcia.com",
+      "blogLink": "https://luisrodriguezgarcia.com",
       "forks": "2",
       "stars": "3",
       "description": "It's a Simple Netflix Clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
@@ -79,7 +79,7 @@ const initialState = {
       "urlDemo": "https://destcar.com",
       "title": "Destcar",
       "github": "https://github.com/luisrdz5/destcar",
-      "blogLink": "https://blog.luisrodriguezgarcia.com",
+      "blogLink": "https://luisrodriguezgarcia.com",
       "stars": "3",
       "forks": "2",
       "description": "It's a Simple Uber clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
