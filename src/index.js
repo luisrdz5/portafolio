@@ -62,7 +62,7 @@ const initialState = {
       "blogLink": "https://blog.luisrodriguezgarcia.com",
       "stars": "25",
       "forks": "20",
-      "description": "Its an ecommerce site dveloped in javascript and deployed in docker swarm using gitlab"
+      "description": "It's an e-commerce site developed in javascript and deployed in docker swarm using gitlab"
     },{
       "id": "2",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/home_optimized.png",
@@ -72,7 +72,7 @@ const initialState = {
       "blogLink": "https://blog.luisrodriguezgarcia.com",
       "forks": "2",
       "stars": "3",
-      "description": "Its a Simple Netflix Clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
+      "description": "It's a Simple Netflix Clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
     },{
       "id": "3",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/destcar3.png",
@@ -82,7 +82,7 @@ const initialState = {
       "blogLink": "https://blog.luisrodriguezgarcia.com",
       "stars": "3",
       "forks": "2",
-      "description": "Its a Simple Uber clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
+      "description": "It's a Simple Uber clone developed in javascript using React, Node and deployed in Heroku using travis-ci"
     }
   ],
   social: [

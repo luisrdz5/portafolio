@@ -10,7 +10,7 @@ const Footer = (props) =>  {
       <div className='Footer-info'>
         <h2>Luis Antonio Rodríguez García</h2>
         <span>
-          © All rights are reserved | 
+          © All rights reserved | 
           {' '}
           {new Date().getFullYear()}
           {' '}
