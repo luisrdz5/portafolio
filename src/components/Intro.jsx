@@ -15,7 +15,7 @@ const Intro = () => (
           <br />
           {' '}
         <span>
-          I'm an expert Full Stack developer in Javascript, PHP and Python.
+          I'm a Site Reliability Engineer and Full Stack developer in Javascript, PHP and Python.
           <br />
           <br />
           I have broad knowledge in Linux based security systems with over 20 years of experience.

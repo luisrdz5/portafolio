@@ -56,7 +56,6 @@ const initialState = {
     {
       "id": "1",
       "image":"https://luisrodriguezgarcia-blog.s3-us-west-2.amazonaws.com/portafolio+images/kpd3rsstoremini.png",
-      "urlDemo": "https://kod3rsstore.com",
       "title": "kod3rsstore",
       "github": "https://github.com/kod3rsStore",
       "blogLink": "https://luisrodriguezgarcia.com",
