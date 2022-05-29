@@ -43,6 +43,13 @@ module.exports = {
           },
         ],
       }, {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },{
         test: /\.svg$/,
         use: [
           {
